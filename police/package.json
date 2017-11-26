@@ -3,13 +3,12 @@
     "version": "0.0.1",
     "description": "Policemap",
     "main": "gruntfile.js",
-    "author": "ANdrey V", 
+    "author": "ANdrey V",
     "devDependencies": {
         "grunt": "*",
         "grunt-contrib-cssmin": "*",
         "grunt-contrib-uglify": "*",
         "grunt-contrib-copy": "*",
         "grunt-html-build": "*"
-
     }
 }
