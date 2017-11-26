@@ -26,7 +26,7 @@ $(function() {
 		var q = $('#txt-search').val();
 		console.log('search', q, cityInd)
 		if (!q) return;
-		location.href = 'police.html#city=' + cityInd + '&query=' + q;
+		location.href = '#city=' + cityInd + '&query=' + q;
 	}
 	console.log($('#btn-search'))
 	$('#btn-search').on('click', search)

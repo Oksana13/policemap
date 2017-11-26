@@ -53,7 +53,7 @@ input[type="text"]:focus {/* background: #fff; */}
 body {height: 100%;position: relative;min-height: 100%;}
 .pane {transition: width 0.5s ease-out;box-sizing: border-box;height: 100%;}
 .pane.details {width: 400px;/* background: rgba(255, 255, 255, 0.2); */position: fixed;right: 0;z-index: 1;padding-top: 38px;overflow-y: auto;}
-.pane.results {transition: margin 0.5s ease-out;padding: 0;margin-left: 320px;margin-right: 400px;background: rgba(255, 255, 255, 0.8);overflow: visible;min-height: 100%;height: auto;position: relative;overflow: hidden;}
+.pane.results {transition: margin 0.5s ease-out;padding: 0;margin-left: 320px;margin-right: 400px;background: rgba(255, 255, 255, 0.8);overflow: visible;min-height: 50%;height: auto;position: relative;overflow: hidden;}
 .pane.toolbar {width: 320px;/* background: rgba(255, 255, 255, 0.2); */margin-right: 10px;position: fixed;/* padding-top: 20px; */z-index: 2;}
 .pane.toolbar .pane-cont {/* padding-top: 40px; */position: relative;height: 100%;box-sizing: border-box;padding: 0;}
 

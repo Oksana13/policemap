@@ -17,6 +17,7 @@ module.exports = function(grunt) {
             comments: 'html/comments.html',
             anketa: 'html/anketa.html',
             static: 'html/static.html',
+            header: 'html/header.html'
         }
     }
     grunt.initConfig({
@@ -27,7 +28,7 @@ module.exports = function(grunt) {
             },
             target: {
                 files: {
-                    "dist/css/main.css": ['css/reset.css', 'css/style.css', 'css/police.css', 'css/view.css']
+                    "dist/css/main.css": ['css/reset.css', 'css/style.css', 'css/police.css', 'css/view.css', 'css/header.css']
                 }
             }
         },

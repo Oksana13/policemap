@@ -1,73 +1,146 @@
 <!DOCTYPE html>
-<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1">
+<!--<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1">-->
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
 <meta charset="utf-8">
-<title>Карта полиции</title>
-<link href="css/static.css" rel="stylesheet" media="screen">
-<link href="css/style.css" rel="stylesheet" media="screen">
-<link href="https://fonts.googleapis.com/css?family=Roboto:300,400" rel="stylesheet">
-<link href="css/pages.css" rel="stylesheet" media="screen">
 <link rel="shortcut icon" type="image/png" sizes="16x16" href="favicon-16x16.png" >
 <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
-<div class="overlay">
-</div>
-<div class="all">
-  <body id="home" class="pages static">
-    <header>
-    	<a href="/" title="На главную"><img src="css/img/logo.png" alt="Карта полиции">
-        <h1>Карта полиции</h1></a>
-        <h3>
-          <a class="full">Открыть карту</a>
-            <div class="hidden">
-              <a class="full" href="police.html#city=2">Воронеж</a>
-              <a class="full" href="police.html#city=0">Санкт-Петербург</a>
-              <a class="full" href="police.html#city=1">Москва</a>
-            </div>
+<title>Карта полиции</title>
+<!-- build:remove -->
+<link href="css/reset.css" rel="stylesheet" media="screen">
 
-        </h3>
-    </header>
-    <div class="text-wrap">
-    <div class="about">
-      <p>&laquo;Карта полиции&raquo; реализована в партнёрстве с Объединённой группой общественного наблюдения и инициативой общественного мониторинга отделов полиции &laquo;Гражданин и полиция&raquo;, поддерживаемой руководством МВД.</p>
-      <p>Карта показывает актуальную справочную информацию о подразделении, обслуживающем конкретный адрес - будь то участковый, отдел или РУВД. Вычисленный по специальной методике рейтинг отделов полиции позволяет сравнивать их друг с другом по информационной открытости и доступности.</p>
 
-      <nav>
-        <div class="link" >Санкт-Петербург
-          <span class="summary">
-            <span class="item"><a href="static-spb.html">
-              УМВД: <b>27</b> /
-              Отделов: <b>86  </b> /
-              Участковых: <b>927  </b></a>
-            </span><span class="item">
-              <a href="police.html#city=0">Показать на карте</a>
-            </span>
-          </span>
-        </div>
-        <div class="link" >Воронеж
-          <span class="summary">
-            <span class="item"><a href="static-vo.html">
-              УМВД: <b>3</b> /
-              Отделов: <b>7</b> /
-              Участковых: <b>593</b></a>
-            </span><span class="item">
-              <a href="police.html#city=2">Показать на карте</a>
-            </span>
-          </span>
-        </div>
-        <div class="link" >Москва
-          <span class="summary">
-            <span class="item">Данные обрабатываеются
-            </span><span class="item">
-              <a href="police.html#city=1">Показать на карте</a>
-            </span>
-          </span>
-        </div>
-      </nav>
-    </div>
-  </div>
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
 
-</div>
+<link href="css/style.css" rel="stylesheet" media="screen">
+<link href="css/police.css" rel="stylesheet" media="screen">
+<link href="css/header.css" rel="stylesheet" media="screen">
+<link href="css/view.css" rel="stylesheet" media="screen">
+<link href="css/pages.css" rel="stylesheet" media="screen">
+<!-- build:remove -->
+
+<!-- build:style main --><!-- /build -->
+
+
+<!-- build:remove -->
+<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+<script src="libs/jquery-2.1.3.min.js"></script>
+<script src="libs/mustache.js"></script>
+<!-- <script src="libs/chartist.min.js"></script> -->
+<script src="js/common/controls.js"></script>
+<script src="js/common/common.js"></script>
+<script src="js/common/core.js"></script>
+<script src="js/map-objects.js"></script>
+<script src="js/api.js"></script>
+<script src="js/db-api.js"></script>
+<script src="js/police.js"></script>
+<script src="js/anketa.js"></script>
+<script src="js/details.js"></script>
+<script src="js/header.js"></script>
+<script src="js/comments.js"></script>
+<script src="js/search.js"></script>
+<script src="js/static-map.js"></script>
 <script src="js/static/metrika.js"></script>
 <noscript><div><img src="https://mc.yandex.ru/watch/46355028" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-108418867-1"></script>
 <script src="js/static/analytics.js"></script>
+<!-- build:remove -->
+
+<!-- build:script libs --><!-- /build -->
+<!-- build:script main --><!-- /build -->
+
+
+
+<body class="bgc user-layout">
+<div data-include="html/header.html" class="top-menu">
+  <!-- build:section header--><!-- /build -->
+</div>
+<div data-include="html/toolbar.html" class="pane toolbar collapsed">
+  <!-- build:section toolbar--><!-- /build -->
+</div>
+<div data-include="html/details.html" class="pane details">
+  <!-- build:section details--><!-- /build -->
+</div>
+<div data-include="html/map.html" class="pane results"  id="pane-results" >
+  <!-- build:section map--><!-- /build -->
+</div>
+<div data-include="html/comments.html" class="comments-section">
+  <!-- build:section comments--><!-- /build -->
+</div>
 </body>
+
+
+<!--<!DOCTYPE html>-->
+<!--<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1">-->
+<!--<meta charset="utf-8">-->
+<!--<title>Карта полиции</title>-->
+<!--<link href="css/static.css" rel="stylesheet" media="screen">-->
+<!--<link href="css/style.css" rel="stylesheet" media="screen">-->
+<!--<link href="https://fonts.googleapis.com/css?family=Roboto:300,400" rel="stylesheet">-->
+<!--<link href="css/pages.css" rel="stylesheet" media="screen">-->
+<!--<link rel="shortcut icon" type="image/png" sizes="16x16" href="favicon-16x16.png" >-->
+<!--<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">-->
+<!--<div class="overlay">-->
+<!--</div>-->
+<!--<div class="all">-->
+  <!--<body id="home" class="pages static">-->
+    <!--<header>-->
+    	<!--<a href="/" title="На главную"><img src="css/img/logo.png" alt="Карта полиции">-->
+        <!--<h1>Карта полиции</h1></a>-->
+        <!--<h3>-->
+          <!--<a class="full">Открыть карту</a>-->
+            <!--<div class="hidden">-->
+              <!--<a class="full" href="police.html#city=2">Воронеж</a>-->
+              <!--<a class="full" href="police.html#city=0">Санкт-Петербург</a>-->
+              <!--<a class="full" href="police.html#city=1">Москва</a>-->
+            <!--</div>-->
+
+        <!--</h3>-->
+    <!--</header>-->
+    <!--<div class="text-wrap">-->
+    <!--<div class="about">-->
+      <!--<p>&laquo;Карта полиции&raquo; реализована в партнёрстве с Объединённой группой общественного наблюдения и инициативой общественного мониторинга отделов полиции &laquo;Гражданин и полиция&raquo;, поддерживаемой руководством МВД.</p>-->
+      <!--<p>Карта показывает актуальную справочную информацию о подразделении, обслуживающем конкретный адрес - будь то участковый, отдел или РУВД. Вычисленный по специальной методике рейтинг отделов полиции позволяет сравнивать их друг с другом по информационной открытости и доступности.</p>-->
+
+      <!--<nav>-->
+        <!--<div class="link" >Санкт-Петербург-->
+          <!--<span class="summary">-->
+            <!--<span class="item"><a href="static-spb.html">-->
+              <!--УМВД: <b>27</b> /-->
+              <!--Отделов: <b>86  </b> /-->
+              <!--Участковых: <b>927  </b></a>-->
+            <!--</span><span class="item">-->
+              <!--<a href="police.html#city=0">Показать на карте</a>-->
+            <!--</span>-->
+          <!--</span>-->
+        <!--</div>-->
+        <!--<div class="link" >Воронеж-->
+          <!--<span class="summary">-->
+            <!--<span class="item"><a href="static-vo.html">-->
+              <!--УМВД: <b>3</b> /-->
+              <!--Отделов: <b>7</b> /-->
+              <!--Участковых: <b>593</b></a>-->
+            <!--</span><span class="item">-->
+              <!--<a href="police.html#city=2">Показать на карте</a>-->
+            <!--</span>-->
+          <!--</span>-->
+        <!--</div>-->
+        <!--<div class="link" >Москва-->
+          <!--<span class="summary">-->
+            <!--<span class="item">Данные обрабатываеются-->
+            <!--</span><span class="item">-->
+              <!--<a href="police.html#city=1">Показать на карте</a>-->
+            <!--</span>-->
+          <!--</span>-->
+        <!--</div>-->
+      <!--</nav>-->
+    <!--</div>-->
+  <!--</div>-->
+
+<!--</div>-->
+<!--<script src="js/static/metrika.js"></script>-->
+<!--<noscript><div><img src="https://mc.yandex.ru/watch/46355028" style="position:absolute; left:-9999px;" alt="" /></div></noscript>-->
+<!--<script async src="https://www.googletagmanager.com/gtag/js?id=UA-108418867-1"></script>-->
+<!--<script src="js/static/analytics.js"></script>-->
+<!--</body>-->
