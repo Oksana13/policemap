@@ -3,6 +3,7 @@ header {
   flex-flow: row;
   justify-content: space-between;
   align-items: center;
+  background: #1d3854;
 }
 
 header .main-menu {
@@ -20,7 +21,7 @@ header .main-menu li a {
 }
 
 header .help-project {
-  background: rgba(255,255,255,.8);
+  background: rgb(255, 130, 61);
   color: #000;
   text-decoration: none;
   font-size: 14px;
@@ -29,4 +30,10 @@ header .help-project {
   padding-top: 6px;
   box-sizing: border-box;
   margin-right: 37px;
+  border-radius: 22px;
+  text-transform: uppercase;
+  min-width: 245px;
+  padding-top: 13px;
+  font-weight: bold;
+  color: #fff;
 }

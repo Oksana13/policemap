@@ -6,9 +6,9 @@
 </script>
 <nav id="details-toggle" class="details-toggle">
     <a class="t-area tab-toggle">Руководство</a>
-    <a class="t-region tab-toggle">Отдел (ОВД)</a>
+    <a class="selected t-region tab-toggle">Отдел (ОВД)</a>
     <a class="t-sector tab-toggle">Участковый</a>
-    <a id="btn-main-menu" class="selected btn-menu tab-toggle"> Инфо<!--i class="icon-th-list"></i--> </a>
+    <!--<a id="btn-main-menu" class="btn-menu tab-toggle"> Инфо&lt;!&ndash;i class="icon-th-list"></i&ndash;&gt; </a>-->
     <!-- <div class="details-tools tools">
         <button class="btn btn-edit"> <i class="icon-pencil"></i> </button>
         <button class="btn btn-save"> <i class="icon-check"></i> </button>
@@ -25,35 +25,63 @@
     <div id="department-details" class="sub-panel "></div>
     <div id="region-details" class="sub-panel"></div>
     <div id="sector-details" class="sub-panel "></div>
-    <div id="main-info" class="main-info sub-panel   shown">
-        <ul id="main-info-list" class="info-list">
+    <!--<div id="main-info" class="main-info sub-panel   shown">-->
+        <!--<ul id="main-info-list" class="info-list">-->
 
-	         <li class="info-link info-first sub-header">
-             <h2>Чтобы найти участкового, введите адрес в строке поиска. Для получения информации о подразделении, выберите точку или область на карте</h2>
-           </li>
-            <li class="info-link" data-link="html/info/about.html">
-                <h2>О проекте </h2>
-            </li>
-            <li class="info-link" data-link="html/info/no-content.html">
-                <h2>Как пользоваться картой</h2>
-            </li>
-            <li class="info-link" data-link="html/info/how-to-rate.html">
-                <h2>Как формируется рейтинг </h2>
-            </li>
-            <li class="info-link">
-                <h2><a href="http://policemap.tilda.ws/documents" target="_blank">Частые вопросы о полиции</a></h2>
-            </li>
-            <li class="info-link" data-link="html/info/no-content.html">
-                <h2>Обратная связь</h2>
-            </li>
-            <li class="info-link" data-link="html/info/no-content.html">
-                <h2>Поддержать прооект</h2>
-            </li>
-        </ul>
+	         <!--<li class="info-link info-first sub-header">-->
+             <!--<h2>Чтобы найти участкового, введите адрес в строке поиска. Для получения информации о подразделении, выберите точку или область на карте</h2>-->
+           <!--</li>-->
+            <!--<li class="info-link" data-link="html/info/about.html">-->
+                <!--<h2>О проекте </h2>-->
+            <!--</li>-->
+            <!--<li class="info-link" data-link="html/info/no-content.html">-->
+                <!--<h2>Как пользоваться картой</h2>-->
+            <!--</li>-->
+            <!--<li class="info-link" data-link="html/info/how-to-rate.html">-->
+                <!--<h2>Как формируется рейтинг </h2>-->
+            <!--</li>-->
+            <!--<li class="info-link">-->
+                <!--<h2><a href="http://policemap.tilda.ws/documents" target="_blank">Частые вопросы о полиции</a></h2>-->
+            <!--</li>-->
+            <!--<li class="info-link" data-link="html/info/no-content.html">-->
+                <!--<h2>Обратная связь</h2>-->
+            <!--</li>-->
+            <!--<li class="info-link" data-link="html/info/no-content.html">-->
+                <!--<h2>Поддержать прооект</h2>-->
+            <!--</li>-->
+        <!--</ul>-->
 
-        <a local-url href="index.html" class="static-home">Домашняя страница проекта</a>
+        <!--<a local-url href="index.html" class="static-home">Домашняя страница проекта</a>-->
 
-    </div>
+    <!--</div> <!--<div id="main-info" class="main-info sub-panel   shown">-->
+        <!--<ul id="main-info-list" class="info-list">-->
+
+	         <!--<li class="info-link info-first sub-header">-->
+             <!--<h2>Чтобы найти участкового, введите адрес в строке поиска. Для получения информации о подразделении, выберите точку или область на карте</h2>-->
+           <!--</li>-->
+            <!--<li class="info-link" data-link="html/info/about.html">-->
+                <!--<h2>О проекте </h2>-->
+            <!--</li>-->
+            <!--<li class="info-link" data-link="html/info/no-content.html">-->
+                <!--<h2>Как пользоваться картой</h2>-->
+            <!--</li>-->
+            <!--<li class="info-link" data-link="html/info/how-to-rate.html">-->
+                <!--<h2>Как формируется рейтинг </h2>-->
+            <!--</li>-->
+            <!--<li class="info-link">-->
+                <!--<h2><a href="http://policemap.tilda.ws/documents" target="_blank">Частые вопросы о полиции</a></h2>-->
+            <!--</li>-->
+            <!--<li class="info-link" data-link="html/info/no-content.html">-->
+                <!--<h2>Обратная связь</h2>-->
+            <!--</li>-->
+            <!--<li class="info-link" data-link="html/info/no-content.html">-->
+                <!--<h2>Поддержать прооект</h2>-->
+            <!--</li>-->
+        <!--</ul>-->
+
+        <!--<a local-url href="index.html" class="static-home">Домашняя страница проекта</a>-->
+
+    <!--</div>-->
 </div>
 <script data-template="region" type="text/template">
     <div class="cur-address"></div>
@@ -90,7 +118,7 @@
         </ul>
         {{#region}}
         <div class="contacts">
-            <div class="real-hot-line" title="Горячая линия о нарушениях"> <span class="hot-line"><i class="icon-phone"></i> {{hotLine}}</span> - горячая линия о нарушениях</div>
+            <div class="real-hot-line" title="Горячая линия о нарушениях"> <span class="hot-line"><a href="tel:{{hotLine}}"><i class="icon-phone"></i> {{hotLine}}</a></span> - горячая линия о нарушениях</div>
             <a class="hot-line" title="Подать заявление через электронную приёмную" href="https://78.xn--b1aew.xn--p1ai/request_main" target="_blank">Отправить обращение</a><div class="real-hot-line">для составления обращения воспользуйтесь <a title="Составить обращение о нарушениях" href="#">Конструктором обращений</a></div>
         </div>
         {{#personName}}
@@ -104,6 +132,9 @@
             {{/personTime}}
         </div>
         {{/personName}}
+
+        <div id="region-comments"></div>
+
         <h6 class="sub-header">Деятельность ОВД</h6>
         <div>
             {{#report}}
@@ -126,7 +157,7 @@
         </div>
         {{/press.length}}
         {{/region}}
-        <div id="region-comments"></div>
+
         <div class="sectors more sub-list" id="region-more">
             <h6 class="sub-header">Подробнее</h6>
             <ul>
