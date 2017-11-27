@@ -18,6 +18,8 @@
 <link href="css/header.css" rel="stylesheet" media="screen">
 <link href="css/view.css" rel="stylesheet" media="screen">
 <link href="css/pages.css" rel="stylesheet" media="screen">
+<link href="css/static.css" rel="stylesheet" media="screen">
+
 <!-- build:remove -->
 
 <!-- build:style main --><!-- /build -->
@@ -40,7 +42,7 @@
 <script src="js/header.js"></script>
 <script src="js/comments.js"></script>
 <script src="js/search.js"></script>
-<script src="js/static-map.js"></script>
+<script src="js/static/static-map.js"></script>
 <script src="js/static/metrika.js"></script>
 <noscript><div><img src="https://mc.yandex.ru/watch/46355028" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-108418867-1"></script>
@@ -56,16 +58,23 @@
 <div data-include="html/header.html" class="top-menu">
   <!-- build:section header--><!-- /build -->
 </div>
-<div data-include="html/toolbar.html" class="pane toolbar">
-  <!-- build:section toolbar--><!-- /build -->
-</div>
 
-<div data-include="html/map.html" class="pane results"  id="pane-results" >
-  <!-- build:section map--><!-- /build -->
+<div class="map-container">
+  <div data-include="html/map.html" class="pane results"  id="pane-results" >
+    <!-- build:section map--><!-- /build -->
+  </div>
+
+  <div data-include="html/toolbar.html" class="pane toolbar">
+    <!-- build:section toolbar--><!-- /build -->
+  </div>
 </div>
 
 <div data-include="html/search.html" class="pane search-pane">
   <!-- build:section search--><!-- /build -->
+</div>
+
+<div data-include="static-spb.html" class="pane">
+  <!-- build:section rating--><!-- /build -->
 </div>
 
 <div data-include="html/details.html" class="pane details">

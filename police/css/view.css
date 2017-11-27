@@ -1,2 +1,2 @@
-.user-layout .pane.results {/* margin-left: 0; */height: 50%;}
+.user-layout .pane.results {/* margin-left: 0; */width: 100%;height: 400px;}
 .user-layout .history-btn { display: none }

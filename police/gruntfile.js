@@ -18,7 +18,8 @@ module.exports = function(grunt) {
             anketa: 'html/anketa.html',
             static: 'html/static.html',
             header: 'html/header.html',
-            search: 'html/search.html'
+            search: 'html/search.html',
+            rating: 'static-spb.html'
         }
     }
     grunt.initConfig({
@@ -35,7 +36,8 @@ module.exports = function(grunt) {
                       'css/police.css',
                       'css/view.css',
                       'css/header.css',
-                      'css/cards.css'
+                      'css/cards.css',
+                      'css/static.css'
                     ]
                 }
             }
