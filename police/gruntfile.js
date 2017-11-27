@@ -28,7 +28,14 @@ module.exports = function(grunt) {
             },
             target: {
                 files: {
-                    "dist/css/main.css": ['css/reset.css', 'css/style.css', 'css/police.css', 'css/view.css', 'css/header.css']
+                    "dist/css/main.css": [
+                      'css/reset.css',
+                      'css/style.css',
+                      'css/police.css',
+                      'css/view.css',
+                      'css/header.css',
+                      'css/cards.css'
+                    ]
                 }
             }
         },

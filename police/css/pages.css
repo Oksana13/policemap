@@ -64,3 +64,60 @@ a.full:hover {background: #1b3046;}
 .bread{margin-top: -5px;margin-bottom: 30px;margin-left: 65px;font-size: 14px;}
 .bread a {color:#fff;}
 .text {margin-top: 60px;}
+
+/*cards*/
+.cards-block {
+  width: 400px;
+  height: 300px;
+  background: #1d3854;
+  position: relative;
+  cursor: pointer;
+}
+.card-blocks:hover {
+  background: #284e75;
+}
+.cards-blocks .cards-title {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  height: 100px;
+}
+.cards-block .card-title h2 {
+  color: #fff;
+  font-weight: normal;
+}
+
+.cards-wrapper {
+  display: flex;
+  flex-flow: row nowrap;
+  margin: 0 15%;
+  justify-content: flex-end;
+}
+
+.cards-main-title {
+  margin: 0 100px;
+  font-weight: normal;
+  text-align: center;
+}
+
+.card-menu {
+  width: 335px;
+  background: #ececec;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  position: fixed;
+  left: 15%;
+}
+
+.card-wrap {
+  width: 630px;
+}
+
+.card-block {
+  background: #ececec;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 30px;
+  margin-bottom: 50px;
+}
