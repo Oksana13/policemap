@@ -1,0 +1,18 @@
+<div class="map-tools">
+  <a id="btn-locate" class="tool-btn locate icon-location" title="Определить местоположение"></a>
+  <a id="btn-city-toggle" class="tool-btn city-toggle" title="Выбор города"> </a>
+  <ul id="city-popup" class="popup city-popup"> </ul>
+  <script data-template="cities" type="text/template">
+    {{#.}} <li><a>{{name}} </a> </li> {{/.}}
+  </script>
+</div>
+
+<div id="search-msg" class="hello-mess">
+  Чтобы найти участкового, введите адрес в строке поиска. Для получения информации о подразделении, выберите точку или область на карте
+</div>
+<div id="mess" class="mess faded"></div>
+<div class="search">
+  <input type="text" id="txt-search" class="txt-search" placeholder="Адрес, Номер отдела или ФИО " name="">
+  <i class="icon-search fgc" id="btn-search"> </i>
+</div>
+<div id="search-popup" class="popup search-autocomplete  autocomplete collapsed "> </div>

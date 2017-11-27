@@ -51,7 +51,7 @@ input[type="text"]:focus {/* background: #fff; */}
 .dblbuttons button.selected {background: rgba(255, 255, 255, 0.3);color: #fff;cursor: default;}
 
 body {height: 100%;position: relative;min-height: 100%;}
-.pane {transition: width 0.5s ease-out;box-sizing: border-box;height: 100%;}
+.pane {transition: width 0.5s ease-out;box-sizing: border-box;/*height: 100%;*/}
 .pane.details {width: 400px;/* background: rgba(255, 255, 255, 0.2); */position: fixed;right: 0;z-index: 1;padding-top: 38px;overflow-y: auto;}
 .pane.results {transition: margin 0.5s ease-out;padding: 0;margin-right: 320px;background: rgba(255, 255, 255, 0.8);overflow: visible;min-height: 50%;height: auto;position: relative;overflow: hidden;}
 .pane.toolbar {width: 320px; height: 50%; right:0;/* background: rgba(255, 255, 255, 0.2); */margin-right: 10px;position: fixed;/* padding-top: 20px; */z-index: 2;}
@@ -79,7 +79,7 @@ body {height: 100%;position: relative;min-height: 100%;}
 .pane .pane-toggle .icon-th-list { display: none; }
 .pane.collapsed .pane-toggle b { display: none; }
 
-.hello-mess {position: absolute;transition: opacity ease-out 0.5s;background: #fffbc8;padding: 4px 10px;width: 229px;line-height: 17px;right: 5px;top: 40px;box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);opacity: 0;visibility: hidden;z-index: 1;}
+.hello-mess {position: absolute;transition: opacity ease-out 0.5s;background: #fffbc8;padding: 4px 10px;width: 229px;line-height: 17px;/*right: 5px;*/left: 166px;top: 40px;box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);opacity: 0;visibility: hidden;z-index: 1;}
 .shown { opacity: 1; visibility : visible}
 
 .loadable { /*transition: filter 1s ease-out; filter: grayscale(0) opacity(1) */ }
@@ -92,7 +92,7 @@ body {height: 100%;position: relative;min-height: 100%;}
 .pane.details.collapsed ~ .list-header{padding-right: 0;right: 0;}
 .pane.toolbar.collapsed ~ .list-header{left: 0;padding-left: 40px;}
 
-.map-tools {position: absolute;top:0;/* left: 200px; */padding: 4px;right: 251px;}
+.map-tools {position: absolute;top:0;/* left: 200px; */padding: 4px;/*right: 251px;*/}
 .map-tools .tool-btn {float: left;width: 30px;height: 30px;line-height: 30px;background: rgba(255, 255, 255, 0.66);border-radius: 2px;text-align: center;font-size: 16px;margin-right: 4px;box-shadow: 0 0 10px rgba(0, 0, 0, 0.38);}
 .map-tools a:hover { opacity: 0.8 }
 .map-tools .city-toggle {width: 100px;font-size: 12px;padding: 0 10px;}
@@ -115,7 +115,7 @@ body {height: 100%;position: relative;min-height: 100%;}
 
 .search-toggle:hover {color: rgba(255, 255, 255, 0.8)}
 .search-toggle.collapsed + .checkbox-list {max-height: 0;  }
-.search {position: absolute;right: 0;background: rgba(255, 255, 255, 0.83);top: 0;width: 250px;overflow: hidden;margin: 4px;box-shadow: 0 0 10px rgba(0, 0, 0, 0.38);box-sizing: border-box;}
+.search {position: absolute;left: 166px;/*right: 0;*/background: rgba(255, 255, 255, 0.83);top: 0;width: 250px;overflow: hidden;margin: 4px;box-shadow: 0 0 10px rgba(0, 0, 0, 0.38);box-sizing: border-box;}
 .search .icon-search{position: absolute;font-size: 16px;top: 6px;left: 9px;/* color: rgba(255, 255, 255, 0.4); */cursor: pointer;/* display: none; */}
 .search input[type="text"] {background: transparent;padding-left: 34px;}
 .search input[type="text"]:focus  { background: #fff }
@@ -131,7 +131,7 @@ body {height: 100%;position: relative;min-height: 100%;}
 .city-popup {width: 154px;}
 .checkbox-list {overflow: hidden;}
 .autocomplete {left: 0;top: 0;background: rgba(255, 255, 255, 1);width: 250px;display: block;border-radius: 0;}
-.search-autocomplete {right: 0;left: initial;top: 0;margin: 4px;margin-top: 38px;}
+.search-autocomplete {/*right: 0;*/left: 166px;top: 0;margin: 4px;margin-top: 38px;}
 .autocomplete h3 {line-height: 30px;color: #777;padding: 0 10px;font-weight: bold;}
 .search-autocomplete.popup li{padding-left: 30px;}
 .search-autocomplete.popup li.type-sectors a, .search-autocomplete.popup li.type-persons a{text-transform: capitalize;}
@@ -197,7 +197,7 @@ body {height: 100%;position: relative;min-height: 100%;}
 .details .tel i{padding-right: 10px;line-height: 20px;font-size: 16px;color: rgba(255, 255, 255, 0.35);float: left;}
 .details .desc {font-size: 11px;margin-top: 10px;color: rgba(255, 255, 255, 0.8);}
 .details .btn-edit { display: none }
-.details .rates {color: rgba(255, 255, 255, 0.88);/* margin: 10px 0; */background: rgba(255, 255, 255, 0.12);/* padding: 10px; */max-height: 0;overflow: hidden;box-sizing: border-box; transition: ease-out 0.5s max-height}
+.details .rates {color: rgba(255, 255, 255, 0.88);/* margin: 10px 0; */background: rgba(255, 255, 255, 0.12);/* padding: 10px; */max-height: 0;overflow: hidden;box-sizing: border-box; transition: ease-out 0.5s;}
 .details .rates li{padding: 4px 6px;line-height: 24px;}
 .details .rates .ank-rate {margin-right: 10px;float: left;}
 .details .rates.expanded { max-height: 500px }
@@ -281,7 +281,7 @@ body {height: 100%;position: relative;min-height: 100%;}
 
 .dash-panel {height: calc(100% - 38px);overflow: auto;position: relative;}
 .dash-panel {display: none;}
-.dash-panel.shown { display: block, padding: 0 10px; }
+.dash-panel.shown { display: block; padding: 0 10px; }
 .main-list {
     /* padding-top: 30px; */
     /* height: 100%; */
@@ -373,7 +373,7 @@ body {height: 100%;position: relative;min-height: 100%;}
 .new-template ::-moz-placeholder       {color:#777; }
 .new-template :-ms-input-placeholder   {line-height: 30px; color:#777;}
 .new-template .cat {width: 100px;float: left;margin-right: 4px;}
-.anketa  .list {max-height: 1000px;transition: ease-in-out 0.5s max-height;overflow: hidden;margin-bottom: 4px;}
+.anketa  .list {max-height: 1000px;transition: ease-in-out 0.5s;overflow: hidden;margin-bottom: 4px;}
 .anketa .category {line-height: 20px;font-size: 13px;/* text-transform: capitalize; */font-weight: bold;margin-bottom: 6px;padding-bottom: 6px;color: #555;cursor: pointer;}
 .anketa .category .stat {overflow: hidden;margin-right: 10px;float: left;font-size: 11px;}
 .anketa .category .stat q, .anketa .category .stat u {float: left;line-height: 20px;/* padding: 0 6px; *//* color: #fff; */background: rgba(255, 255, 255, 0.9);width: 20px;text-align: center;}
@@ -455,3 +455,10 @@ body {height: 100%;position: relative;min-height: 100%;}
 .pane.toolbar.collapsed ~ .results .logo {margin: 0 20px;}
 
 .static-home {position: absolute; right: 10px; bottom: 10px; color: rgba(255, 255, 255, 0.57); }
+/*search*/
+.pane.search-pane {
+    position: relative;
+    left: 0;
+    width: 100%;
+    min-height: 38px;
+}

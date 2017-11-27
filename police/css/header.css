@@ -3,12 +3,11 @@ header {
   flex-flow: row;
   justify-content: space-between;
   align-items: center;
-  background: #336699;
 }
 
 header .main-menu {
   width: 100%;
-  background: #336699;
+  background: #1d3854;
 }
 
 header .main-menu li a {

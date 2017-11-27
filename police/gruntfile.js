@@ -17,7 +17,8 @@ module.exports = function(grunt) {
             comments: 'html/comments.html',
             anketa: 'html/anketa.html',
             static: 'html/static.html',
-            header: 'html/header.html'
+            header: 'html/header.html',
+            search: 'html/search.html'
         }
     }
     grunt.initConfig({
